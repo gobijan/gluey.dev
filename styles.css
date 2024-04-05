@@ -2,6 +2,17 @@
   --primary: var(--cyan-6);
   --text-default: var(--slate-gray-2);
   --text-heading: var(--slate-gray-0);
+  --bg-default: inherit;
+  --bg-secondary: var(--slate-gray-11);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    --text-default: var(--slate-gray-9);
+    --text-heading: var(--slate-gray-11);
+    --bg-default: var(--slate-gray-0);
+    --bg-secondary: var(--slate-gray-1);
+  }
 }
 
 /* Setup */
@@ -29,14 +40,22 @@ a {
     -moz-osx-font-smoothing:grayscale
 }
 
-.bg-primary {
-  background: var(--primary);
-}
-
 .text-default {
   color: var(--text-default);
 }
 
 .text-heading {
   color: var(--text-heading);
+}
+
+.bg-primary {
+  background: var(--primary);
+}
+
+.bg-default {
+  background: var(--bg-default);
+}
+
+.bg-secondary {
+  background: var(--bg-secondary);
 }

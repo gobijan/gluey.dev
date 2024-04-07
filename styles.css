@@ -7,7 +7,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
+  :root {
     --text-default: var(--slate-gray-9);
     --text-heading: var(--slate-gray-11);
     --bg-default: var(--slate-gray-0);
@@ -17,15 +17,21 @@
 
 /* Setup */
 html {
-    font-feature-settings: "dlig", "ss07", "ss08", "cv01", "cv02", "cv03", "cv04", "cv05", "cv10"
+  font-feature-settings: "dlig", "ss07", "ss08", "cv01", "cv02", "cv03", "cv04", "cv05", "cv10"
 }
 
-html, body {
-    scroll-behavior:smooth;
-    line-height: var(--line-height-body);
+html,
+body {
+  scroll-behavior: smooth;
+  line-height: var(--line-height-body);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: var(--line-height-heading);
 }
 
@@ -36,8 +42,8 @@ a {
 /* Helpers */
 
 .antialiased {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing:grayscale
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
 }
 
 .text-default {
